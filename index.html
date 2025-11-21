@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arti Verma — Web Developer | UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Arti Verma — Web Developer & UI/UX Designer. Projects, skills, and contact details." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light">
+
+  <!-- THEME TOGGLE (CSS ONLY) -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle">
+  <label for="theme-toggle" class="theme-btn">
+    <span class="theme-text light-label">🌙 </span>
+    <span class="theme-text dark-label">☀️ </span>
+  </label>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="logo" href="#home">Arti<span class="dot">.</span></a>
+
+      <!-- mobile menu checkbox -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+
+      <!-- desktop nav -->
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="hire-pill" href="#contact">Hire Me</a>
+    </div>
+
+    <!-- FULLSCREEN MOBILE OVERLAY MENU -->
+    <div class="overlay-menu">
+      <ul>
+        <li><a href="#home" onclick="document.getElementById('menu-toggle').checked=false">Home</a></li>
+        <li><a href="#about" onclick="document.getElementById('menu-toggle').checked=false">About</a></li>
+        <li><a href="#skills" onclick="document.getElementById('menu-toggle').checked=false">Skills</a></li>
+        <li><a href="#projects" onclick="document.getElementById('menu-toggle').checked=false">Projects</a></li>
+        <li><a href="#contact" onclick="document.getElementById('menu-toggle').checked=false">Contact</a></li>
+      </ul>
+
+      <div class="overlay-footer">
+        <a href="https://github.com/artiverma-00" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/arti-verma-184899229/" target="_blank">LinkedIn</a>
+        <a href="https://www.behance.net/artiverma7023" target="_blank">Behance</a>
+        <a href="mailto:vermaarti930@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="badge">Hello, I’m</div>
+        <h1 class="hero-name">Arti Verma</h1>
+        <p class="hero-role">Web Developer | UI/UX Designer</p>
+
+        <p class="hero-desc">
+          Enthusiastic Web Developer with strong skills in HTML, CSS, JavaScript and UI/UX design.
+          I create responsive, user-friendly interfaces with a focus on clean, accessible experiences.
+        </p>
+
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-glass">
+          <img class="profile-photo" src="https://media.licdn.com/dms/image/v2/D5603AQGoFuk46H8Vbg/profile-displayphoto-shrink_400_400/B56ZkgmRMFHcAg-/0/1757188530538?e=1765411200&v=beta&t=DniNPA08KGHejyxd9qsAKIkmcziYJEn9GxoF0cjPvBg" alt="Arti Verma" loading="lazy"
+            onerror="this.style.display='none';this.parentNode.querySelector('.profile-fallback').style.display='flex'">
+          <div class="profile-fallback" aria-hidden="true">AV</div>
+        </div>
+        <div class="hero-shape"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>What I Do</h2>
+      <p class="section-lead">Services I offer.</p>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Frontend Development</h3>
+          <p>Responsive, accessible UIs using HTML, CSS, JavaScript, TailwindCSS & Bootstrap.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>UI / UX Design</h3>
+          <p>Wireframing, prototyping, and high-fidelity design using Figma and Canva.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Full Stack (Learning)</h3>
+          <p>Exploring backend technologies like SQL and API integrations.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section id="tools" class="tools">
+    <div class="container">
+      <h2>Tools & Tech</h2>
+      <p class="section-lead">Technologies I use.</p>
+
+      <div class="tools-grid">
+        <div class="tool-card">HTML5</div>
+        <div class="tool-card">CSS3</div>
+        <div class="tool-card">JS</div>
+        <div class="tool-card">Tailwind</div>
+        <div class="tool-card">Bootstrap</div>
+        <div class="tool-card">SQL</div>
+        <div class="tool-card">Figma</div>
+        <div class="tool-card">Canva</div>
+        <div class="tool-card">Git</div>
+        <div class="tool-card">C++</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="portfolio">
+    <div class="container">
+      <h2>Selected Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- UniFests -->
+        <article class="project-card">
+          <div class="thumb" style="background-image:url('unifest.png');"></div>
+          <div class="project-body">
+            <div class="tags">Web Design • Frontend • UI/UX</div>
+            <h3>UniFests — College Event Management</h3>
+            <p class="proj-blurb">
+              Designed & developed a responsive event and club management website using HTML, CSS,
+              TailwindCSS and JavaScript. Included event listings, booking forms and club registration.
+            </p>
+            <div class="proj-links">
+              <a href="https://artiverma-00.github.io/college-event-booking/" target="_blank" rel="noopener noreferrer">Live</a>
+            </div>
+          </div>
+          <a class="project-action" href="https://artiverma-00.github.io/college-event-booking/" target="_blank" rel="noopener noreferrer" aria-label="Open UniFests live site">→</a>
+        </article>
+
+        <!-- Bootstrap Web -->
+        <article class="project-card">
+          <div class="thumb" style="background-image:url('image.png');"></div>
+          <div class="project-body">
+            <div class="tags">Bootstrap • Responsive</div>
+            <h3>Bootstrap Web — Responsive Template</h3>
+            <p class="proj-blurb">
+              A responsive template built with Bootstrap demonstrating layout, components and responsive utilities.
+            </p>
+            <div class="proj-links">
+              <a href="https://artiverma-00.github.io/bootstrap_web/" target="_blank" rel="noopener noreferrer">Live</a>
+            </div>
+          </div>
+          <a class="project-action" href="https://artiverma-00.github.io/bootstrap_web/" target="_blank" rel="noopener noreferrer" aria-label="Open Bootstrap Web live site">→</a>
+        </article>
+
+        <!-- Placeholder projects -->
+        <article class="project-card">
+          <div class="thumb"></div>
+          <div class="project-body">
+            <div class="tags">Web App</div>
+            <h3>Project Two</h3>
+            <p class="proj-blurb">Your project details here.</p>
+          </div>
+          <div class="project-action">→</div>
+        </article>
+
+        <article class="project-card">
+          <div class="thumb"></div>
+          <div class="project-body">
+            <div class="tags">UI</div>
+            <h3>Project Three</h3>
+            <p class="proj-blurb">Your project details here.</p>
+          </div>
+          <div class="project-action">→</div>
+        </article>
+
+        <article class="project-card">
+          <div class="thumb"></div>
+          <div class="project-body">
+            <div class="tags">Backend</div>
+            <h3>Project Four</h3>
+            <p class="proj-blurb">Your project details here.</p>
+          </div>
+          <div class="project-action">→</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill"><span>HTML</span><div class="bar"><span style="width:95%"></span></div></div>
+        <div class="skill"><span>CSS</span><div class="bar"><span style="width:92%"></span></div></div>
+        <div class="skill"><span>JavaScript</span><div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill"><span>TailwindCSS</span><div class="bar"><span style="width:85%"></span></div></div>
+        <div class="skill"><span>Bootstrap</span><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill"><span>React (learning)</span><div class="bar"><span style="width:60%"></span></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-photo">
+        <div class="about-img">
+          <img class="about-photo-img" src="mypic.png" alt="Arti Verma" loading="lazy"
+               onerror="this.style.display='none';this.parentNode.querySelector('.about-fallback').style.display='flex'">
+          <div class="about-fallback" aria-hidden="true">AV</div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          I’m a Web Developer focused on creating performant, responsive and accessible web experiences.
+          Skilled in frontend technologies and UI/UX design, with two internship experiences and multiple projects.
+        </p>
+
+        <div class="stats">
+          <div class="stat"><strong>1+</strong><span>Years Experience</span></div>
+          <div class="stat"><strong>10+</strong><span>Projects</span></div>
+          <div class="stat"><strong>2</strong><span>Internships</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <h2>Contact</h2>
+      <p class="section-lead">Interested in working together? Send a message.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Email: <a href="mailto:vermaarti930@gmail.com">vermaarti930@gmail.com</a></p>
+          <p>Location: Delhi, India</p>
+        </div>
+
+        <form class="contact-form" action="#" method="post" aria-label="Contact form">
+          <div class="form-row">
+            <label class="form-group">
+              <span class="label-text">Your Name</span>
+              <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+
+            <label class="form-group">
+              <span class="label-text">Your Email</span>
+              <input type="email" name="email" placeholder="you@email.com" required>
+            </label>
+          </div>
+
+          <label class="form-group">
+            <span class="label-text">Your Message</span>
+            <textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-left">© 2025 Arti Verma</div>
+      <div class="footer-right">
+        <a href="https://github.com/artiverma-00" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/arti-verma-184899229/" target="_blank">LinkedIn</a>
+        <a href="https://www.behance.net/artiverma7023" target="_blank">Behance</a>
+        <a href="mailto:vermaarti930@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- THEME TOGGLE SCRIPT -->
+  <script>
+    (function(){
+      const themeCheckbox = document.getElementById('theme-toggle');
+      const body = document.body;
+
+      // initialize from localStorage or system preference
+      const saved = localStorage.getItem('site-theme');
+      if(saved){
+        body.classList.remove('light','dark');
+        body.classList.add(saved);
+        themeCheckbox.checked = saved === 'dark';
+      } else {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        body.classList.remove('light','dark');
+        body.classList.add(prefersDark ? 'dark' : 'light');
+        themeCheckbox.checked = prefersDark;
+      }
+
+      // toggle handler
+      themeCheckbox.addEventListener('change', function(){
+        if(this.checked){
+          body.classList.remove('light');
+          body.classList.add('dark');
+          localStorage.setItem('site-theme','dark');
+        } else {
+          body.classList.remove('dark');
+          body.classList.add('light');
+          localStorage.setItem('site-theme','light');
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
