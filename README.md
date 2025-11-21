@@ -72,7 +72,5 @@ After generating the basic template with AI tools, I **manually edited and impro
 - Theme toggle → checkbox + CSS variables  
 - Ensured accessibility and semantic HTML
 
----
-
 ## 📁 Folder Structure
 
